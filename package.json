@@ -1,0 +1,21 @@
+{
+  "name": "monorepo",
+  "description": "Minimal monorepo reproduction",
+  "version": "1.0.0",
+  "author": "Bozhidar Dedov",
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=12"
+  },
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "build": "yarn workspace client build && yarn workspace components build"
+  },
+  "workspaces": [
+    "client",
+    "components",
+    "app"
+  ]
+}

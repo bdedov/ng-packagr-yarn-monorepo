@@ -1,0 +1,30 @@
+{
+  "name": "components",
+  "version": "1.0.0",
+  "author": "Bozhidar Dedov",
+  "description": "Reusable components",
+  "main": "index.js",
+  "scripts": {
+    "build": "ng-packagr -p package.json"
+  },
+  "peerDependencies": {
+    "@angular/cdk": "^8.2.3",
+    "@angular/common": "^8.2.13",
+    "@angular/core": "^8.2.13",
+    "@angular/forms": "^8.2.13",
+    "@angular/platform-browser": "^8.2.13",
+    "@angular/router": "^8.2.13",
+    "rxjs": "~6.4.0"
+  },
+  "dependencies": {
+    "client": "1.0.0"
+  },
+  "devDependencies": {
+    "ng-packagr": "^5.5.0"
+  },
+  "ngPackage": {
+    "lib": {
+      "entryFile": "./index.ts"
+    }
+  }
+}
